@@ -6,7 +6,12 @@
 # with alias "plan"
 import "tfplan-functions" as plan
 
-
+# List of mandatory tags
+### List of mandatory tags ###
+mandatory_tags = [
+  "Department",
+  "Billable",
+]
 
 # Get all EC2 instances
 allEC2Instances = plan.find_resources("aws_instance")
